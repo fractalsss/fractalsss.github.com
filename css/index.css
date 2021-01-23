@@ -1,0 +1,110 @@
+canvas{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#canv {
+  display: flex;
+  margin: -35px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.content{
+    z-index: 999;
+}
+
+body{
+  z-index: -1;
+}
+
+/* grids */
+.container {
+    display: grid;
+    width: 70%;
+    height: 100%;
+    grid-template-areas: "welcum contact"
+    "about contact";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 275px 125px;
+    background-image: url("../img/arch.png");
+    /* background-color: black; */
+    margin-top: 8%;
+    margin-left: 15%;
+  }
+
+  /* .dottedText:after
+  {
+      content: '';
+      position:absolute;
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, transparent 50%, transparent 50%),
+      radial-gradient(circle, transparent 20%, white 50%) 30px 30px;
+      background-size:4px 4px;
+  } */
+
+  .container > div {
+    border: 1px dashed #888;
+  }
+  
+  .welcum {
+    grid-area: welcum;
+    color: #fff;
+    text-align: left;
+    font-size: 75%;
+    list-style: none;
+    padding-left: 2%;
+  
+  }
+.terminal{
+  color: #0f0;
+}
+.red{
+  color: red;
+}
+
+  .contact {
+    grid-area: contact;
+    font-size: 75%;
+    text-align: left;
+    color: #fff;
+    list-style: none;
+    padding-left: 2%;
+  }
+
+  .con{
+    color:#fff;
+  }
+
+  .about {
+    grid-area: about;
+    text-align: left;
+    list-style: none;
+    color: #fff;
+    font-size: 75%;
+    padding-right: 10%;
+    padding-left: 2%;
+  }
+
+  .welcome{
+    color: #fff;
+    font-size: 500%;
+    margin-left: 8%;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+  }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya;</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/grid.js"></script>
+  <link rel="stylesheet" href="css/loader.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- preloader -->
+    <!-- <div class="word">LOADING...</div> -->
+  
+<!-- canvas matrix effect -->
+  <canvas id="canv">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/matrix.js"></script>
+  </canvas>
+<div class="content">
+    <!-- grid -->
+    <div class="container">
+      <div class="welcum">
+<li> <span class="terminal"> tanya@archx86_64</span>:<span class="red">~$</span> cat hello_world_program.asm</li> 
+<li>section .data</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	msg db 10d,13d,"Hello World" </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	l equ $-msg</li>
+<li>section .text </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	global _start </li>
+<li>_start:</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rax,1 </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rdi,1 </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rsi,msg </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rdx,1</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	syscall</li>
+<li>&nbsp;</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rax,60</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	mov rdi,0 </li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;	syscall </li>
+<li>end:</li>
+      </div>
+      <div class="contact"> 
+        <li> <span class="terminal"> tanya@archx86_64</span>:<span class="red">~$</span> figlet WELCOME</li> <br>
+<div class="welcome">
+WELCOME
+</div>
+    <br> <br> <br>
+    <li> <span class="terminal"> tanya@archx86_64</span>:<span class="red">~$</span> cat contact_tanya.txt</li>
+    <li>Mail - <a class="con" href="mailto:onlytanya@protonmail.com" target="_blank">onlytanya@protonmail.com</a></li>
+    <li></li>Instagram - <a class="con" href="https://www.instagram.com/onlytanya_/" target="_blank">@onlytanya_</a></li>
+    <li>Discord - T A N Y A #7023</li>
+    <li>Github - <a class="con" href="https://github.com/onlytanya/" target="_blank">@onlytanya</a></li>
+    <li>Quora - <a class="con" href="https://www.quora.com/profile/Tanya-Arora-394" target="_blank">Tanya</a></li>
+    <li>Twitter - <a class="con" href="https://twitter.com/tahnyuh_/" target="_blank">@tahnyuh_</a></li>
+    <li>Linkedin - <a class="con" href="https://www.linkedin.com/in/tanya-arora-710b541b6/" target="_blank">Tanya Arora</a></li>
+    <li>Mirakee - <a class="con" href="https://www.mirakee.com/fractals" target="_blank">fractals</a></li>
+    <li>Incase, you prefer dark web - <a class="con" href="mailto:blob@cock.li" target="_blank">blob@cock.li</a></li>
+    <br>
+    <li> <span class="terminal"> tanya@archx86_64</span>:<span class="red">~$</span>| </li>
+      </div>
+      <div class="about">
+        <li> <span class="terminal"> tanya@archx86_64</span>:<span class="red">~$</span> cat about_tanya.txt</li> 
+        She is a to-be-programmer and a 16y.o CTF player trying to gain more skills and experience in cyber security. She already has a decent knowledge of 4 programming languages and is continuing to learn more.
+      </div>
+    </div>
+</div>
+<!-- loader -->
+<script>
+  $(function(){
+    setTimeout(function(){
+      $(".word").fadeOut(5000);
+    },6000);
+  });
+</script>
+</body>
+<script src="js/loader.js"></script>
+</html>
