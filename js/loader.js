@@ -3,12 +3,13 @@ function Ticker( elem ) {
 	this.done = false;
 	this.cycleCount = 5;
 	this.cycleCurrent = 0;
-	this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~'.split('');
+	this.chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+{}|[]\\;\':"<>?,./`~аеёиоуыэюя'.split('');
 	this.charsCount = this.chars.length;
 	this.letters = elem.find( 'span' );
 	this.letterCount = this.letters.length;
 	this.letterCurrent = 0;
 
+	
 	this.letters.each( function() {
 		var $this = $( this );
 		$this.attr( 'data-orig', $this.text() );
@@ -16,9 +17,11 @@ function Ticker( elem ) {
 	});
 }
 
+
 Ticker.prototype.getChar = function() {
 	return this.chars[ Math.floor( Math.random() * this.charsCount ) ];
 };
+
 
 Ticker.prototype.reset = function() {
 	this.done = false;
@@ -31,6 +34,7 @@ Ticker.prototype.reset = function() {
 	});
 	this.loop();
 };
+
 
 Ticker.prototype.loop = function() {
 	var self = this;
@@ -45,6 +49,7 @@ Ticker.prototype.loop = function() {
 		}
 	});
 
+	
 	if( this.cycleCurrent < this.cycleCount ) {
 		this.cycleCurrent++;
 	} else if( this.letterCurrent < this.letterCount ) {
@@ -56,10 +61,12 @@ Ticker.prototype.loop = function() {
 		this.done = true;
 	}
 
+	
 	if( !this.done ) {
 		requestAnimationFrame( function() {
 			self.loop();
 		});
+		
 	} else {
 		setTimeout( function() {
 			self.reset();
@@ -67,10 +74,14 @@ Ticker.prototype.loop = function() {
 	}
 };
 
+
 $words = $( '.word' );
+
 
 $words.each( function() {
 	var $this = $( this ),
 		ticker = new Ticker( $this ).reset();
 	$this.data( 'ticker', ticker  );
 });
+
+
