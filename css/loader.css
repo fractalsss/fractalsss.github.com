@@ -29,7 +29,14 @@ body {
   position: absolute;
   text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
   top: 0;
-
+  background: radial-gradient(#222922, #000500);
+  height: 100vh;
+  width: 1oovw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
 }
 
 .word span {
