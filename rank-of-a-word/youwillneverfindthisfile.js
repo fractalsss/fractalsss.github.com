@@ -1,6 +1,6 @@
 function fn1()
 {
-    var str = document.getElementById('input').value;
+    var str = document.getElementById('input').value.toLowerCase();
 
     // factorial of a number.
 function fac(n)
