@@ -32,7 +32,7 @@ body {
     margin-bottom: 40px;
   }
 
-  #timer, .time-left {
+  #timer, .time-left, #timer div span {
     white-space: nowrap;
     background: linear-gradient(135deg, rgba(0, 161, 241, 0.8), rgba(0, 161, 241, 0.2), rgba(0, 161, 241, 0.8), rgba(0, 161, 241, 0.2), rgba(0, 161, 241, 0.8));
     -webkit-background-clip: text;
