@@ -1,6 +1,5 @@
 body {
     text-align: center;
-    margin-top: 20%;
     padding: 50px 50px;
     background: black;
     font-family: 'Cinzel Decorative', serif;
@@ -16,7 +15,7 @@ body {
 
 #timer div {
     display: inline-block;
-    min-width: 80px;
+    min-width: 69px;
 }
 
 #timer div span {
@@ -29,8 +28,8 @@ body {
 
 .time-left {
     width: 100%;
-    font-size: 24px;
-    margin-bottom: 5%;
+    font-size: 21px;
+    margin-bottom: 40px;
   }
 
   #timer, .time-left {
